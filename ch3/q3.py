@@ -4,11 +4,9 @@ sys.stdin = open('input.txt','rt')
 N, M = map(int, input().split())
 A = list(map(int, input().split()))
 
-# 최소 용량이 가질 수 있는 범위 : 1 ~ SUM(A)
-# DVD 한 장에 모든 노래 다 담으면 M개의 DVD를 만들 수 있으니까!
-
-MIN = 1
-MAX = sum(A)
+# 최소 용량이 가질 수 있는 범위 : MAX(A) ~ SUM(A)
+MIN = max(A) # DVD 한 장의 용량은 최소 MAX(A) 여야 함
+MAX = sum(A) # DVD 한 장에 모든 노래 다 담으면 M개의 DVD를 만들 수 있으니까!
 
 result = 0
 
