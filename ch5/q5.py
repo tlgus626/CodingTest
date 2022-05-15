@@ -9,7 +9,7 @@ def DFS(v):
         for i in range(N) :
             if check[i] == 1 :
                 SUM += dogs[i]
-        if SUM > C : # edge cut
+        if SUM > C : # cut edge
             return
         if SUM > MAX : # MAX는 지역변수인데, 함수 내에서 참조하고 있음 (update되는 값이라서)
             MAX = SUM
