@@ -5,7 +5,7 @@ sys.stdin = open('input.txt', 'r')
 
 def DFS(v):
     global cnt
-    # v==M : 하나의 중복순열이 완성됨
+    # v==M : 하나의 순열이 완성됨
     if v == M:
         for j in range(M):
             print(result[j], end=' ')
