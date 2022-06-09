@@ -1,4 +1,4 @@
-# merge sort : divide and conquer algorithm
+# merge sort : divide and conquer algorithm, 후위순회
 
 # arr은 전역 리스트이므로, 함수 내에서 따로 정의할 필요 없음
 def Dsort(lt, rt):
