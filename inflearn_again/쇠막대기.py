@@ -5,7 +5,6 @@ cnt = 0
 for i in range(len(s)):
     if s[i] == '(':
         stack.append(s[i])
-        print('append')
     else:
         if s[i - 1] == '(':
             stack.pop()
